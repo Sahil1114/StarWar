@@ -1,0 +1,69 @@
+
+<soup.neumorphism.NeumorphCardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Neumorph.CardView"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    app:neumorph_lightSource="leftTop"
+    app:neumorph_backgroundColor="@color/white"
+    app:neumorph_inset="10dp"
+    app:circularflow_defaultRadius="5dp"
+    app:neumorph_shadowColorDark="@color/almostBlack"
+    app:neumorph_shadowColorLight="@color/almostWhite"
+    app:neumorph_shadowElevation="5dp"
+    app:neumorph_shapeType="flat"
+    app:neumorph_strokeColor="@color/black">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/posterCard"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            app:neumorph_shadowColorDark="@color/almostWhite"
+            app:neumorph_shadowColorLight="@color/almostWhite"
+            android:layout_height="180dp"
+            app:circularflow_radiusInDP="0"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:padding="1dp"
+                android:src="@drawable/male"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="abc"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/posterCard"
+            tools:layout_editor_absoluteX="16dp" />
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="abc"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</soup.neumorphism.NeumorphCardView>
+
+
+
